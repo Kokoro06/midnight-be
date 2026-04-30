@@ -1,0 +1,377 @@
+{
+  "_meta": {
+    "description": "影展得獎資料，供 seed-festivals.mjs 批次匯入 Directus festival_awards collection",
+    "fields": {
+      "movie_title": "中文片名，用於比對 movies collection",
+      "movie_original_title": "原文片名",
+      "movie_year": "電影上映年份",
+      "festival": "影展名稱",
+      "edition": "屆次（null = 待確認）",
+      "year": "頒獎年份",
+      "award_category": "獎項名稱",
+      "result": "won = 得獎 / nominated = 入圍"
+    },
+    "todo": [
+      "TIDF 第12屆（2021）台灣競賽首獎：請至 tidf.org.tw 補充",
+      "TIDF 第13屆（2022）台灣競賽首獎：請至 tidf.org.tw 補充",
+      "TIDF 第14屆（2024）台灣競賽首獎：請至 tidf.org.tw 補充",
+      "高雄電影節歷年得獎：請至 khff.org.tw 補充",
+      "女性影展歷年得獎：請至 wmw.org.tw 補充",
+      "台北電影節 2023 最佳劇情長片：已確認為《哈勇家》"
+    ]
+  },
+  "awards": [
+    {
+      "movie_title": "刺客聶隱娘",
+      "movie_original_title": "The Assassin",
+      "movie_year": 2015,
+      "festival": "金馬",
+      "edition": 52,
+      "year": 2015,
+      "award_category": "最佳影片",
+      "result": "won"
+    },
+    {
+      "movie_title": "大同",
+      "movie_original_title": "The Great Harmony",
+      "movie_year": 2015,
+      "festival": "金馬",
+      "edition": 52,
+      "year": 2015,
+      "award_category": "最佳紀錄片",
+      "result": "won"
+    },
+    {
+      "movie_title": "八月",
+      "movie_original_title": "August",
+      "movie_year": 2016,
+      "festival": "金馬",
+      "edition": 53,
+      "year": 2016,
+      "award_category": "最佳影片",
+      "result": "won"
+    },
+    {
+      "movie_title": "我不是潘金蓮",
+      "movie_original_title": "I Am Not Madame Bovary",
+      "movie_year": 2016,
+      "festival": "金馬",
+      "edition": 53,
+      "year": 2016,
+      "award_category": "最佳導演",
+      "result": "won"
+    },
+    {
+      "movie_title": "血觀音",
+      "movie_original_title": "The Bold, the Corrupt, and the Beautiful",
+      "movie_year": 2017,
+      "festival": "金馬",
+      "edition": 54,
+      "year": 2017,
+      "award_category": "最佳影片",
+      "result": "won"
+    },
+    {
+      "movie_title": "嘉年華",
+      "movie_original_title": "Angels Wear White",
+      "movie_year": 2017,
+      "festival": "金馬",
+      "edition": 54,
+      "year": 2017,
+      "award_category": "最佳導演",
+      "result": "won"
+    },
+    {
+      "movie_title": "大佛普拉斯",
+      "movie_original_title": "The Great Buddha+",
+      "movie_year": 2017,
+      "festival": "金馬",
+      "edition": 54,
+      "year": 2017,
+      "award_category": "最佳新導演",
+      "result": "won"
+    },
+    {
+      "movie_title": "大象席地而坐",
+      "movie_original_title": "An Elephant Sitting Still",
+      "movie_year": 2018,
+      "festival": "金馬",
+      "edition": 55,
+      "year": 2018,
+      "award_category": "最佳影片",
+      "result": "won"
+    },
+    {
+      "movie_title": "影",
+      "movie_original_title": "Shadow",
+      "movie_year": 2018,
+      "festival": "金馬",
+      "edition": 55,
+      "year": 2018,
+      "award_category": "最佳導演",
+      "result": "won"
+    },
+    {
+      "movie_title": "我們的青春，在台灣",
+      "movie_original_title": "Our Youth in Taiwan",
+      "movie_year": 2018,
+      "festival": "金馬",
+      "edition": 55,
+      "year": 2018,
+      "award_category": "最佳紀錄片",
+      "result": "won"
+    },
+    {
+      "movie_title": "陽光普照",
+      "movie_original_title": "A Sun",
+      "movie_year": 2019,
+      "festival": "金馬",
+      "edition": 56,
+      "year": 2019,
+      "award_category": "最佳影片",
+      "result": "won"
+    },
+    {
+      "movie_title": "消失的情人節",
+      "movie_original_title": "My Missing Valentine",
+      "movie_year": 2020,
+      "festival": "金馬",
+      "edition": 57,
+      "year": 2020,
+      "award_category": "最佳影片",
+      "result": "won"
+    },
+    {
+      "movie_title": "瀑布",
+      "movie_original_title": "Waterfall",
+      "movie_year": 2021,
+      "festival": "金馬",
+      "edition": 58,
+      "year": 2021,
+      "award_category": "最佳影片",
+      "result": "won"
+    },
+    {
+      "movie_title": "花果飄零",
+      "movie_original_title": "Scattered Blossoms",
+      "movie_year": 2021,
+      "festival": "金馬",
+      "edition": 58,
+      "year": 2021,
+      "award_category": "最佳導演",
+      "result": "won"
+    },
+    {
+      "movie_title": "時代革命",
+      "movie_original_title": "Revolution of Our Times",
+      "movie_year": 2021,
+      "festival": "金馬",
+      "edition": 58,
+      "year": 2021,
+      "award_category": "最佳紀錄片",
+      "result": "won"
+    },
+    {
+      "movie_title": "一家子兒咕咕叫",
+      "movie_original_title": "Mama Boy",
+      "movie_year": 2022,
+      "festival": "金馬",
+      "edition": 59,
+      "year": 2022,
+      "award_category": "最佳影片",
+      "result": "won"
+    },
+    {
+      "movie_title": "哈勇家",
+      "movie_original_title": "Gaga",
+      "movie_year": 2022,
+      "festival": "金馬",
+      "edition": 59,
+      "year": 2022,
+      "award_category": "最佳導演",
+      "result": "won"
+    },
+    {
+      "movie_title": "九槍",
+      "movie_original_title": "Nine Shots",
+      "movie_year": 2022,
+      "festival": "金馬",
+      "edition": 59,
+      "year": 2022,
+      "award_category": "最佳紀錄片",
+      "result": "won"
+    },
+    {
+      "movie_title": "石門",
+      "movie_original_title": "Stone Gate",
+      "movie_year": 2023,
+      "festival": "金馬",
+      "edition": 60,
+      "year": 2023,
+      "award_category": "最佳影片",
+      "result": "won"
+    },
+    {
+      "movie_title": "老狐狸",
+      "movie_original_title": "Old Fox",
+      "movie_year": 2023,
+      "festival": "金馬",
+      "edition": 60,
+      "year": 2023,
+      "award_category": "最佳導演",
+      "result": "won"
+    },
+    {
+      "movie_title": "青春（春）",
+      "movie_original_title": "Youth (Spring)",
+      "movie_year": 2023,
+      "festival": "金馬",
+      "edition": 60,
+      "year": 2023,
+      "award_category": "最佳紀錄片",
+      "result": "won"
+    },
+    {
+      "movie_title": "一部未完成的電影",
+      "movie_original_title": "An Unfinished Film",
+      "movie_year": 2024,
+      "festival": "金馬",
+      "edition": 61,
+      "year": 2024,
+      "award_category": "最佳影片",
+      "result": "won"
+    },
+    {
+      "movie_title": "由島至島",
+      "movie_original_title": "From Island to Island",
+      "movie_year": 2024,
+      "festival": "金馬",
+      "edition": 61,
+      "year": 2024,
+      "award_category": "最佳紀錄片",
+      "result": "won"
+    },
+
+    {
+      "movie_title": "醉·生夢死",
+      "movie_original_title": "Thanatos, Drunk",
+      "movie_year": 2015,
+      "festival": "台北電影節",
+      "edition": null,
+      "year": 2015,
+      "award_category": "最佳劇情長片",
+      "result": "won"
+    },
+    {
+      "movie_title": "只要我長大",
+      "movie_original_title": "A Fish Out of Water",
+      "movie_year": 2015,
+      "festival": "台北電影節",
+      "edition": null,
+      "year": 2016,
+      "award_category": "最佳劇情長片",
+      "result": "won"
+    },
+    {
+      "movie_title": "大佛普拉斯",
+      "movie_original_title": "The Great Buddha+",
+      "movie_year": 2017,
+      "festival": "台北電影節",
+      "edition": null,
+      "year": 2017,
+      "award_category": "最佳劇情長片",
+      "result": "won"
+    },
+    {
+      "movie_title": "誰先愛上他的",
+      "movie_original_title": "Dear Ex",
+      "movie_year": 2018,
+      "festival": "台北電影節",
+      "edition": null,
+      "year": 2018,
+      "award_category": "最佳劇情長片",
+      "result": "won"
+    },
+    {
+      "movie_title": "老大人",
+      "movie_original_title": "Father to Son",
+      "movie_year": 2018,
+      "festival": "台北電影節",
+      "edition": null,
+      "year": 2019,
+      "award_category": "最佳劇情長片",
+      "result": "won"
+    },
+    {
+      "movie_title": "返校",
+      "movie_original_title": "Detention",
+      "movie_year": 2019,
+      "festival": "台北電影節",
+      "edition": null,
+      "year": 2020,
+      "award_category": "最佳劇情長片",
+      "result": "won"
+    },
+    {
+      "movie_title": "消失的情人節",
+      "movie_original_title": "My Missing Valentine",
+      "movie_year": 2020,
+      "festival": "台北電影節",
+      "edition": null,
+      "year": 2021,
+      "award_category": "最佳劇情長片",
+      "result": "won"
+    },
+    {
+      "movie_title": "美國女孩",
+      "movie_original_title": "American Girl",
+      "movie_year": 2021,
+      "festival": "台北電影節",
+      "edition": null,
+      "year": 2022,
+      "award_category": "最佳劇情長片",
+      "result": "won"
+    },
+    {
+      "movie_title": "哈勇家",
+      "movie_original_title": "Gaga",
+      "movie_year": 2022,
+      "festival": "台北電影節",
+      "edition": null,
+      "year": 2023,
+      "award_category": "最佳劇情長片",
+      "result": "won"
+    },
+    {
+      "movie_title": "老狐狸",
+      "movie_original_title": "Old Fox",
+      "movie_year": 2023,
+      "festival": "台北電影節",
+      "edition": null,
+      "year": 2024,
+      "award_category": "最佳劇情長片",
+      "result": "won"
+    },
+
+    {
+      "movie_title": "日曜日式散步者",
+      "movie_original_title": "Sunday Walkers",
+      "movie_year": 2015,
+      "festival": "TIDF",
+      "edition": 10,
+      "year": 2016,
+      "award_category": "台灣競賽首獎",
+      "result": "won"
+    },
+    {
+      "movie_title": "日常對話",
+      "movie_original_title": "Small Talk",
+      "movie_year": 2016,
+      "festival": "TIDF",
+      "edition": 11,
+      "year": 2018,
+      "award_category": "台灣競賽首獎",
+      "result": "won"
+    }
+  ]
+}
