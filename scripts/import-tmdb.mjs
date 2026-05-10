@@ -1,5 +1,8 @@
 // import-tmdb.mjs — Phase 10-B TMDB 批次匯入
-// 執行: node midnight-be/scripts/import-tmdb.mjs [--dry-run]
+// 執行:
+//   node midnight-be/scripts/import-tmdb.mjs [--dry-run]
+//   node midnight-be/scripts/import-tmdb.mjs --now-playing [--dry-run]
+//     └─ 改抓 /movie/now_playing 當期院線片，不套用評分/票數門檻
 import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -13,6 +16,7 @@ const env = Object.fromEntries(
 )
 
 const DRY_RUN = process.argv.includes('--dry-run')
+const NOW_PLAYING = process.argv.includes('--now-playing')
 const BASE = 'http://localhost:8055'
 const TMDB_BASE = 'https://api.themoviedb.org/3'
 const TMDB_KEY = env.TMDB_API_KEY
@@ -118,6 +122,19 @@ async function fetchMoviesByGenre(genreId, pages = 3) {
   return movies
 }
 
+async function fetchNowPlaying(pages = 3) {
+  const movies = []
+  for (let page = 1; page <= pages; page++) {
+    const data = await tmdb(
+      `/movie/now_playing?language=zh-TW&region=TW&page=${page}`
+    )
+    if (!data.results?.length) break
+    movies.push(...data.results)
+    await new Promise(r => setTimeout(r, 300))
+  }
+  return movies
+}
+
 // ── Tag weight 計算 ───────────────────────────────────────
 
 function buildTagWeights(tmdbGenreIds) {
@@ -159,31 +176,41 @@ async function main() {
   const tagMap = Object.fromEntries((existingTags ?? []).map(t => [t.name, t.id]))
   console.log(`  ✓ ${Object.keys(tagMap).length} 個 tag\n`)
 
-  // 取得現有 movies（by original_title）
+  // 取得現有 movies — 雙鍵 dedupe：original_title 與 title+year（容忍 ±1 年）
   console.log('🎬 取得現有 movies...')
-  const { data: existingMovies } = await directus(token ?? '', 'GET', '/items/movies?limit=-1&fields=id,original_title')
+  const { data: existingMovies } = await directus(token ?? '', 'GET', '/items/movies?limit=-1&fields=id,title,original_title,year')
     .catch(() => ({ data: [] }))
-  const existingByOrigTitle = Object.fromEntries(
-    (existingMovies ?? [])
-      .filter(m => m.original_title)
-      .map(m => [m.original_title.toLowerCase(), m.id])
-  )
-  console.log(`  ✓ ${Object.keys(existingByOrigTitle).length} 部現有電影\n`)
+  const existingByOrigTitle = {}
+  const existingByZhYear = {}  // `${zhTitle}|${year}` → id
+  for (const m of existingMovies ?? []) {
+    if (m.original_title) existingByOrigTitle[m.original_title.toLowerCase()] = m.id
+    if (m.title && m.year) existingByZhYear[`${m.title}|${m.year}`] = m.id
+  }
+  console.log(`  ✓ ${(existingMovies ?? []).length} 部現有電影（${Object.keys(existingByOrigTitle).length} 有 original_title、${Object.keys(existingByZhYear).length} 有 title+year）\n`)
 
   // 批次抓 TMDB 電影
   console.log('🌐 從 TMDB 抓片單...')
   const seen = new Set()
   const allMovies = []
 
-  for (const genreId of TARGET_GENRES) {
-    const genreName = GENRE_TAG_MAP[genreId]?.primary ?? genreId
-    process.stdout.write(`  genre ${genreId} (${genreName})... `)
-    const movies = await fetchMoviesByGenre(genreId)
+  if (NOW_PLAYING) {
+    console.log('  模式：當期院線片（/movie/now_playing，不套用評分/票數門檻）')
+    const movies = await fetchNowPlaying(3)
     const fresh = movies.filter(m => !seen.has(m.id))
     fresh.forEach(m => seen.add(m.id))
-    allMovies.push(...fresh.map(m => ({ ...m, _queryGenreId: genreId })))
-    console.log(`${fresh.length} 部`)
-    await new Promise(r => setTimeout(r, 300))  // rate limit
+    allMovies.push(...fresh)
+    console.log(`  ${fresh.length} 部`)
+  } else {
+    for (const genreId of TARGET_GENRES) {
+      const genreName = GENRE_TAG_MAP[genreId]?.primary ?? genreId
+      process.stdout.write(`  genre ${genreId} (${genreName})... `)
+      const movies = await fetchMoviesByGenre(genreId)
+      const fresh = movies.filter(m => !seen.has(m.id))
+      fresh.forEach(m => seen.add(m.id))
+      allMovies.push(...fresh.map(m => ({ ...m, _queryGenreId: genreId })))
+      console.log(`${fresh.length} 部`)
+      await new Promise(r => setTimeout(r, 300))  // rate limit
+    }
   }
 
   console.log(`\n  共 ${allMovies.length} 部候選電影（去重後）\n`)
@@ -222,7 +249,7 @@ async function main() {
 
   for (const movie of allMovies) {
     const origTitle = movie.original_title || ''
-    const existingId = existingByOrigTitle[origTitle.toLowerCase()]
+    let existingId = existingByOrigTitle[origTitle.toLowerCase()]
 
     const weights = buildTagWeights(movie.genre_ids ?? [])
     const tagEntries = Object.entries(weights)
@@ -244,6 +271,19 @@ async function main() {
       continue
     }
 
+    const year = parseInt(movie.release_date?.slice(0, 4) ?? '0')
+
+    // 第二層 dedupe：用 zhTitle+year（容忍 ±1 年），抓不同 original_title 寫法的同片
+    if (!existingId && year > 0) {
+      existingId =
+        existingByZhYear[`${zhTitle}|${year}`] ||
+        existingByZhYear[`${zhTitle}|${year - 1}`] ||
+        existingByZhYear[`${zhTitle}|${year + 1}`]
+      if (existingId) {
+        console.log(`  ⤷ 中譯片名比對到已存在《${zhTitle}》(${year})，改為更新`)
+      }
+    }
+
     const posterUrl = movie.poster_path
       ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
       : null
@@ -251,7 +291,7 @@ async function main() {
     const payload = {
       title: zhTitle,
       original_title: origTitle,
-      year: parseInt(movie.release_date?.slice(0, 4) ?? '0'),
+      year,
       poster_url: posterUrl,
       tags: tagEntries,
     }

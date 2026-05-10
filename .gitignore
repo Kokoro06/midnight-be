@@ -2,3 +2,4 @@
 .env.example
 database/
 uploads/
+node_modules/
