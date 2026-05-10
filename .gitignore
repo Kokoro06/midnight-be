@@ -3,3 +3,4 @@
 database/
 uploads/
 node_modules/
+tmp/
