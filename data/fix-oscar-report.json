@@ -1,0 +1,2679 @@
+{
+  "summary": {
+    "total": 117,
+    "dangling": 40,
+    "no_oscars": 18,
+    "replaced": 59,
+    "todo": 0
+  },
+  "dangling": [
+    {
+      "placeholder_id": "012a88d0-c4e9-450b-a62e-45f71189d680",
+      "year": 1967
+    },
+    {
+      "placeholder_id": "04944eb4-7502-477d-a582-714d06db99f0",
+      "year": 1983
+    },
+    {
+      "placeholder_id": "11d1676a-2c2f-4255-982d-d7cb8ca62281",
+      "year": 1972
+    },
+    {
+      "placeholder_id": "176524fc-a9e4-4f59-9714-f748a6d49fba",
+      "year": 1984
+    },
+    {
+      "placeholder_id": "1e15ee19-377c-4ebe-a840-8fbece53ddaf",
+      "year": 1989
+    },
+    {
+      "placeholder_id": "1f8dfafd-5918-47f4-9c69-cdffc88a6616",
+      "year": 1987
+    },
+    {
+      "placeholder_id": "2180322f-f43c-4c2a-a4a9-cabd63e0f188",
+      "year": 1959
+    },
+    {
+      "placeholder_id": "21bf690c-a3f4-444c-8002-a98ac6c5df42",
+      "year": 1985
+    },
+    {
+      "placeholder_id": "2e58ad75-aa4e-4e50-9962-6887be519a33",
+      "year": 1989
+    },
+    {
+      "placeholder_id": "396fcdd8-e0e9-48f3-b4de-ca2fc10a95f2",
+      "year": 1969
+    },
+    {
+      "placeholder_id": "476d26ac-9980-46f8-9f5f-a830574d1cd8",
+      "year": 1987
+    },
+    {
+      "placeholder_id": "4838f2b6-f54a-45fa-aaf9-1dde54403c68",
+      "year": 1989
+    },
+    {
+      "placeholder_id": "57f4212b-0498-4035-ae28-171c0a0f4f44",
+      "year": 1990
+    },
+    {
+      "placeholder_id": "5cdc91eb-683d-4d1e-a433-171fccd86f14",
+      "year": 1961
+    },
+    {
+      "placeholder_id": "60e1280e-d62f-44a5-9aff-e33d44539d99",
+      "year": 1985
+    },
+    {
+      "placeholder_id": "665e0b62-8b6b-4c46-aa26-21b2e5d016ac",
+      "year": 1978
+    },
+    {
+      "placeholder_id": "758a7069-7161-492d-8b19-59f575206e8e",
+      "year": 1984
+    },
+    {
+      "placeholder_id": "7bd3c5d4-d1a6-4b1b-8ead-7d6828499d7f",
+      "year": 1987
+    },
+    {
+      "placeholder_id": "7f187400-e828-4f8d-bcf9-48dd24026947",
+      "year": 1981
+    },
+    {
+      "placeholder_id": "9b5a0258-19bd-4786-a379-0d3df0644686",
+      "year": 1955
+    },
+    {
+      "placeholder_id": "a59bce6e-c7fe-48b6-91f5-559dbd00b0af",
+      "year": 1990
+    },
+    {
+      "placeholder_id": "a59c321d-55ad-4dd4-a4da-d7b9017c62fa",
+      "year": 1982
+    },
+    {
+      "placeholder_id": "a764db21-d0e8-4cc1-9e41-9df53cd4d854",
+      "year": 1981
+    },
+    {
+      "placeholder_id": "aadd6857-03ba-4d30-8cf1-2690abc637d6",
+      "year": 1989
+    },
+    {
+      "placeholder_id": "ac9a97ca-5a1b-4ab2-ae94-ee0ba740b098",
+      "year": 1983
+    },
+    {
+      "placeholder_id": "ada041c9-e73b-470c-a0ed-7e1362b2e8c5",
+      "year": 1965
+    },
+    {
+      "placeholder_id": "bac03961-d528-44e7-b822-46310b3def01",
+      "year": 1989
+    },
+    {
+      "placeholder_id": "c1b5d8f3-261a-4ac1-b38b-6a8758b86e56",
+      "year": 1977
+    },
+    {
+      "placeholder_id": "cb77f41a-80d5-4906-afd3-6a774bd9f298",
+      "year": 1986
+    },
+    {
+      "placeholder_id": "cc556315-009e-4379-8bcf-7a96aecc0ae9",
+      "year": 1981
+    },
+    {
+      "placeholder_id": "d77de748-af72-4220-bc81-eead3a508282",
+      "year": 1976
+    },
+    {
+      "placeholder_id": "d8dac100-f30c-4093-8f99-dda049f3de85",
+      "year": 1969
+    },
+    {
+      "placeholder_id": "da6a7bbd-bb1c-4f92-aa12-e4f428d4ff43",
+      "year": 1976
+    },
+    {
+      "placeholder_id": "deb0c39e-dfc4-4e67-b37b-34aa8bff726a",
+      "year": 1958
+    },
+    {
+      "placeholder_id": "e012884e-4684-4577-b50d-a4d02f61b55b",
+      "year": 1980
+    },
+    {
+      "placeholder_id": "e3a63d3b-3984-4b38-b40b-5bfaa14819ec",
+      "year": 1972
+    },
+    {
+      "placeholder_id": "e4e8f5df-c977-4665-b7d8-27a03334c1e4",
+      "year": 1980
+    },
+    {
+      "placeholder_id": "ef6c9ec2-d98d-41d0-b546-65086033eec5",
+      "year": 1965
+    },
+    {
+      "placeholder_id": "f9a263b5-6a40-4779-8f66-0e1b19cd7c11",
+      "year": 1975
+    },
+    {
+      "placeholder_id": "fcdd7170-59d0-4dcb-b424-d3af58c7fe22",
+      "year": 1988
+    }
+  ],
+  "no_oscars": [
+    {
+      "placeholder_id": "00f39695-0a9a-43a0-b17e-29654fe1ced8",
+      "movie": {
+        "id": "86b24e12-6a99-447f-831f-9e628ee5cc06",
+        "title": "終極追殺令",
+        "year": 1994
+      },
+      "imdb_id": "tt0110413"
+    },
+    {
+      "placeholder_id": "1dd92a8a-2dfd-4d8f-be3c-ceabdc0bf6ee",
+      "movie": {
+        "id": "662ff7e6-d5df-40cb-ad4b-f4b3c0f87611",
+        "title": "原罪犯",
+        "year": 2003
+      },
+      "imdb_id": "tt0364569"
+    },
+    {
+      "placeholder_id": "2578fe04-0e6a-45d9-853c-95f84764fcfb",
+      "movie": {
+        "id": "ce52af08-67a5-431c-a894-5d80520e9f82",
+        "title": "偷拐搶騙",
+        "year": 2000
+      },
+      "imdb_id": "tt0208092"
+    },
+    {
+      "placeholder_id": "33f1d36d-38d9-422e-9fdf-a8e2f96de51a",
+      "movie": {
+        "id": "c3784225-bb2e-4c77-be06-50d0dcbe2613",
+        "title": "真愛繞圈圈",
+        "year": 2014
+      },
+      "imdb_id": "tt1638002"
+    },
+    {
+      "placeholder_id": "39d14586-840b-4c8b-b1db-1a3c703534f2",
+      "movie": {
+        "id": "82c4af48-81a1-49d0-86d8-53210763a762",
+        "title": "手札情緣",
+        "year": 2004
+      },
+      "imdb_id": "tt0332280"
+    },
+    {
+      "placeholder_id": "416eac4f-6b04-4cfb-ae6f-9de2164d3a3f",
+      "movie": {
+        "id": "472d8f0a-f902-4f46-a355-9c1b970b3593",
+        "title": "謀殺綠腳趾",
+        "year": 1998
+      },
+      "imdb_id": "tt0118715"
+    },
+    {
+      "placeholder_id": "4f3d8cc8-ebe2-4fea-af06-6516e62e9681",
+      "movie": {
+        "id": "5ad1d50a-4e15-48cc-bb21-61d4aed7d357",
+        "title": "追殺比爾2：愛的大逃殺",
+        "year": 2004
+      },
+      "imdb_id": "tt0378194"
+    },
+    {
+      "placeholder_id": "690d59aa-8966-48d0-990d-87c17df62e88",
+      "movie": {
+        "id": "148b06d7-1ed9-4ebe-aacb-970e8768fc0a",
+        "title": "追殺比爾",
+        "year": 2003
+      },
+      "imdb_id": "tt0266697"
+    },
+    {
+      "placeholder_id": "6ea88004-564b-4d0a-bb3e-48ca33a7c3ad",
+      "movie": {
+        "id": "241c0f49-bf09-46d0-90b9-90149f2f7ac9",
+        "title": "霸道橫行",
+        "year": 1992
+      },
+      "imdb_id": "tt0105236"
+    },
+    {
+      "placeholder_id": "72aed6ad-8038-4158-a0b9-270a452a0f2d",
+      "movie": {
+        "id": "1f8438f7-8ee9-4dfd-9009-e794fa856b2f",
+        "title": "鐵巨人",
+        "year": 1999
+      },
+      "imdb_id": "tt0129167"
+    },
+    {
+      "placeholder_id": "894d5957-d0a0-4efc-83ac-6a0d911f4088",
+      "movie": {
+        "id": "32120490-8d7b-434b-917b-be735abdce73",
+        "title": "兩根槍管",
+        "year": 1998
+      },
+      "imdb_id": "tt0120735"
+    },
+    {
+      "placeholder_id": "b0553eb0-e5eb-4108-abf8-5e8b0edb271b",
+      "movie": {
+        "id": "39bfe349-3e77-4a56-aaca-7f9066ed7cc6",
+        "title": "鬥陣俱樂部",
+        "year": 1999
+      },
+      "imdb_id": "tt0137523"
+    },
+    {
+      "placeholder_id": "c6115063-4933-47f8-a7be-93fc8e12c07b",
+      "movie": {
+        "id": "955727e5-3da5-46fd-95aa-819dd73d6656",
+        "title": "愛在黎明破曉時",
+        "year": 1995
+      },
+      "imdb_id": "tt0112471"
+    },
+    {
+      "placeholder_id": "e3ed9a1b-8c64-4aa9-9293-0334869299d7",
+      "movie": {
+        "id": "ff5890e5-d865-4c3c-a459-1ca0a6d2e299",
+        "title": "魔法公主",
+        "year": 1997
+      },
+      "imdb_id": "tt0119698"
+    },
+    {
+      "placeholder_id": "ea5c069e-3911-468d-87b0-af054c5f4225",
+      "movie": {
+        "id": "5ec098c6-f24a-4461-9a2c-822720fc6622",
+        "title": "你的名字",
+        "year": 2016
+      },
+      "imdb_id": "tt5311514"
+    },
+    {
+      "placeholder_id": "ee44c3d3-bece-4438-b8ae-eb8592007686",
+      "movie": {
+        "id": "6677a9b7-93f8-4d02-9bda-e8db419e7fe4",
+        "title": "經典老爺車",
+        "year": 2008
+      },
+      "imdb_id": "tt1205489"
+    },
+    {
+      "placeholder_id": "f483720e-af99-4910-b30d-4e77815d5037",
+      "movie": {
+        "id": "673f61c3-2216-4d78-96d4-e98e1699af60",
+        "title": "烈火悍將",
+        "year": 1995
+      },
+      "imdb_id": "tt0113277"
+    },
+    {
+      "placeholder_id": "fc156750-991c-4379-be24-71f1357ed10b",
+      "movie": {
+        "id": "87983233-24bd-40e7-ab6e-0cc3c4e92e95",
+        "title": "壁花男孩",
+        "year": 2012
+      },
+      "imdb_id": "tt1659337"
+    }
+  ],
+  "replaced": [
+    {
+      "placeholder_id": "06469407-3fd8-418c-9d74-0e78d37dfde7",
+      "movie": {
+        "id": "d433d34d-c2b0-4122-ad3a-ee035e3fbc7e",
+        "title": "犬之島",
+        "year": 2018
+      },
+      "imdb_id": "tt5104604",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2018,
+          "award_category": "最佳動畫",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "088da340-548f-4ec5-9cba-513b20cfd506",
+      "movie": {
+        "id": "eb9dee0a-4aa3-4dcf-aa97-122fe7d67af1",
+        "title": "神鬼戰士",
+        "year": 2000
+      },
+      "imdb_id": "tt0172495",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳原著劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳影片",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳男主角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳男配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳攝影",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳服裝設計",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳音效混音",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳視覺效果",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "0a482cd2-6ef4-4e6f-949f-20cca5165531",
+      "movie": {
+        "id": "c1141028-3912-4686-ac74-1878672a6cb9",
+        "title": "侏羅紀公園",
+        "year": 1993
+      },
+      "imdb_id": "tt0107290",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1994,
+          "award_category": "最佳音效混音",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1994,
+          "award_category": "最佳視覺效果",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "0e7de819-d193-46ab-a6c1-7cebb3dbb3af",
+      "movie": {
+        "id": "c8749263-597b-411e-855f-5cbfd596b564",
+        "title": "傲慢與偏見",
+        "year": 2005
+      },
+      "imdb_id": "tt0414387",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2006,
+          "award_category": "最佳女主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2006,
+          "award_category": "最佳服裝設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2006,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2006,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "0f9132b6-9fcc-4172-893a-915dd35a29bb",
+      "movie": {
+        "id": "29b022fb-453d-49c4-93b8-d8be4ebaa155",
+        "title": "哈利波特：神秘的魔法石",
+        "year": 2001
+      },
+      "imdb_id": "tt0241527",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳服裝設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "1013f65a-ea7d-410a-a6d0-85a1e46641ee",
+      "movie": {
+        "id": "08cd5ed2-59f7-4af9-982b-707bbcb16d3e",
+        "title": "魔鬼終結者2",
+        "year": 1991
+      },
+      "imdb_id": "tt0103064",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1992,
+          "award_category": "最佳攝影",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1992,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1992,
+          "award_category": "最佳視覺效果",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1992,
+          "award_category": "最佳化妝與髮型設計",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1992,
+          "award_category": "最佳音效混音",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "10afd36b-15a1-4c5d-a0af-80f2cfa5304b",
+      "movie": {
+        "id": "5a445c34-103a-4a04-9f49-5bf5add155c5",
+        "title": "駭客任務",
+        "year": 1999
+      },
+      "imdb_id": "tt0133093",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳剪輯",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳視覺效果",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳音效混音",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "14582c8d-30d8-4def-a577-02fcbae20996",
+      "movie": {
+        "id": "1156ecb6-190e-4dd0-9f30-644bd34e1a0e",
+        "title": "黑色追緝令",
+        "year": 1994
+      },
+      "imdb_id": "tt0110912",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳原著劇本",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳男主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳男配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳女配角",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "15d1d546-7f0c-4685-b7d5-ec052bccffdc",
+      "movie": {
+        "id": "14301259-898d-4501-99f1-2f0098c6521b",
+        "title": "心靈捕手",
+        "year": 1997
+      },
+      "imdb_id": "tt0119217",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳原著劇本",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳男主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳男配角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳女配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "15e795cf-5fa4-4ca1-a445-e4d9c16470ef",
+      "movie": {
+        "id": "00b6dcba-654d-4c05-8ff7-9a52343f8cb1",
+        "title": "艾蜜莉的異想世界",
+        "year": 2001
+      },
+      "imdb_id": "tt0211915",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳原著劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳音效混音",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳國際影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳攝影",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "16cf1e4e-b3d1-4673-98dd-78b26c6f1970",
+      "movie": {
+        "id": "f2ffd426-4ceb-4465-a94a-d8487ec7c69d",
+        "title": "怪獸電力公司",
+        "year": 2001
+      },
+      "imdb_id": "tt0198781",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳動畫",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳原創歌曲",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "1c152bb3-8daa-46e3-b8cb-2bc3b030c757",
+      "movie": {
+        "id": "051a94d5-3500-4afb-b22c-a2ddb45c9e31",
+        "title": "美國X檔案",
+        "year": 1998
+      },
+      "imdb_id": "tt0120586",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳男主角",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "23a33fa3-24ce-464a-a042-102140faba1e",
+      "movie": {
+        "id": "98d68ba5-f856-40e7-a3c4-fb26c21b56ee",
+        "title": "無法無天",
+        "year": 2002
+      },
+      "imdb_id": "tt0317248",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳改編劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳攝影",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "29b2ebdc-7dd7-45f8-9357-bee456122c29",
+      "movie": {
+        "id": "0e3489b8-da48-4a64-bbf3-bfb4b36e8e64",
+        "title": "鐵面特警隊",
+        "year": 1997
+      },
+      "imdb_id": "tt0119488",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳女配角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳改編劇本",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳攝影",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳音效混音",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "2af19806-e9ea-4a94-a4e5-f61c997343bd",
+      "movie": {
+        "id": "6d1ab6e8-7241-4812-bd54-ad40bc5b5410",
+        "title": "美麗人生",
+        "year": 1997
+      },
+      "imdb_id": "tt0118799",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳原著劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳男主角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳國際影片",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳原著配樂",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "2ca6b8fb-afd3-4ec4-ab6d-2b52ddf95bf8",
+      "movie": {
+        "id": "4565c231-7dd0-46e1-8be2-598b7b851451",
+        "title": "神隱少女",
+        "year": 2001
+      },
+      "imdb_id": "tt0245429",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳動畫",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "2f7708fb-d330-4367-9da3-fc8ec94c9567",
+      "movie": {
+        "id": "7ebf5e0b-4509-4347-a309-dbd54411bf13",
+        "title": "玩具總動員",
+        "year": 1995
+      },
+      "imdb_id": "tt0114709",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "特別成就",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳原著劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "32507531-74c8-432c-8147-ff908f214199",
+      "movie": {
+        "id": "dc20e926-1f73-44bf-8238-8ccff3964131",
+        "title": "哈利波特：火盃的考驗",
+        "year": 2005
+      },
+      "imdb_id": "tt0330373",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2006,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "334ad080-faa3-492c-8835-a04cb72a2164",
+      "movie": {
+        "id": "020e5d8f-f480-4465-ac43-ed325b0ed3bc",
+        "title": "刺激驚爆點",
+        "year": 1995
+      },
+      "imdb_id": "tt0114814",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳男配角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳原著劇本",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "381f6850-62c7-4a29-b52e-448589f24dee",
+      "movie": {
+        "id": "380d890b-1594-4001-b333-c8a85355a0d1",
+        "title": "賭國風雲",
+        "year": 1995
+      },
+      "imdb_id": "tt0112641",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳女主角",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "3feebd22-d1d8-4436-bdcb-6c013e2374ac",
+      "movie": {
+        "id": "93f3166b-2eb1-49ee-a010-afd33ddab812",
+        "title": "霍爾的移動城堡",
+        "year": 2004
+      },
+      "imdb_id": "tt0347149",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2006,
+          "award_category": "最佳動畫",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "40420e52-0b57-47cf-a0f6-a1e788a330d3",
+      "movie": {
+        "id": "7ad5f927-b7d9-4180-b099-c58b0f9a8098",
+        "title": "海底總動員",
+        "year": 2003
+      },
+      "imdb_id": "tt0266543",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳原著劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳動畫",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "445437e9-cffe-4d52-9813-f3bf8328269f",
+      "movie": {
+        "id": "74f177f1-78c9-4390-b65b-b9a85bf16f03",
+        "title": "搶救雷恩大兵",
+        "year": 1998
+      },
+      "imdb_id": "tt0120815",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳原著劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳導演",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳男主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳攝影",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳音效混音",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳剪輯",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳化妝與髮型設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "49f9fbae-3006-4415-af8d-6af4f9edfa43",
+      "movie": {
+        "id": "4e6c091e-7fcc-4a92-9c31-5aba66ae5683",
+        "title": "靈異第六感",
+        "year": 1999
+      },
+      "imdb_id": "tt0167404",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳原著劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳男配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳女配角",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "4bf9e2a2-5142-432b-92c0-a6c189740faa",
+      "movie": {
+        "id": "97aeaa70-f8cf-4e26-8083-7c51310a22f1",
+        "title": "魔戒二部曲：雙城奇謀",
+        "year": 2002
+      },
+      "imdb_id": "tt0167261",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳音效混音",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳視覺效果",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "4e55acc8-a15f-4bef-b85b-acbf5de7f1ab",
+      "movie": {
+        "id": "35d53145-5b4d-4d40-9451-055189c88052",
+        "title": "記憶拼圖",
+        "year": 2000
+      },
+      "imdb_id": "tt0209144",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳原著劇本",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "55afb26c-b198-4977-b1b3-3069ad4ab54c",
+      "movie": {
+        "id": "fdb49993-0d9f-45aa-9507-10056b962e10",
+        "title": "鐵達尼號",
+        "year": 1997
+      },
+      "imdb_id": "tt0120338",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳影片",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳導演",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳女主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳攝影",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳女配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳原創歌曲",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳剪輯",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳視覺效果",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳化妝與髮型設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳音效混音",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳服裝設計",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳美術設計",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1998,
+          "award_category": "最佳原著配樂",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "594e75b5-95fc-409c-9d56-c4462557cc56",
+      "movie": {
+        "id": "b68c0c52-b0b3-49aa-9cc0-cf345cacdb19",
+        "title": "綠色奇蹟",
+        "year": 1999
+      },
+      "imdb_id": "tt0120689",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳男配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳改編劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳音效混音",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "608d224e-a4e2-44d3-b716-c84cfb115155",
+      "movie": {
+        "id": "cac6ee7c-f9cb-4c93-a7bd-efbf2fe5cd03",
+        "title": "黑金企業",
+        "year": 2007
+      },
+      "imdb_id": "tt0469494",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2008,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2008,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2008,
+          "award_category": "最佳男主角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2008,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2008,
+          "award_category": "最佳改編劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2008,
+          "award_category": "最佳攝影",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2008,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "6e5605ff-ef63-4535-a47b-1695e78d42f0",
+      "movie": {
+        "id": "d64adcbc-9beb-4365-ba5d-f224ee15840f",
+        "title": "1917",
+        "year": 2019
+      },
+      "imdb_id": "tt8579674",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2020,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2020,
+          "award_category": "最佳攝影",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2020,
+          "award_category": "最佳視覺效果",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2020,
+          "award_category": "最佳音效混音",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "70abf25b-d567-4b21-84ec-68464ca388f0",
+      "movie": {
+        "id": "88ae3c08-d2cf-41c7-958b-b6efb6c01a37",
+        "title": "大娛樂家",
+        "year": 2017
+      },
+      "imdb_id": "tt1485796",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2018,
+          "award_category": "最佳原創歌曲",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "7744f359-38de-4350-a0f8-8c1f5d25ca7c",
+      "movie": {
+        "id": "d1e493b6-85ba-4ba6-a38d-625cd78b2b6e",
+        "title": "哈利波特：阿茲卡班的逃犯",
+        "year": 2004
+      },
+      "imdb_id": "tt0304141",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2005,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2005,
+          "award_category": "最佳視覺效果",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "77e3ba3a-0a84-437e-8509-44201e9c7d67",
+      "movie": {
+        "id": "877f31cc-e74a-46f0-bf06-9c9651037e30",
+        "title": "當幸福來敲門",
+        "year": 2006
+      },
+      "imdb_id": "tt0454921",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2007,
+          "award_category": "最佳男主角",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "7995f555-a215-48f9-92f5-e20146f6a125",
+      "movie": {
+        "id": "2c514bd3-8155-49fe-8fb9-5007ed9d97e3",
+        "title": "登峰造擊",
+        "year": 2004
+      },
+      "imdb_id": "tt0405159",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2005,
+          "award_category": "最佳影片",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2005,
+          "award_category": "最佳導演",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2005,
+          "award_category": "最佳女主角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2005,
+          "award_category": "最佳男主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2005,
+          "award_category": "最佳男配角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2005,
+          "award_category": "最佳改編劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2005,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "7a6b05c6-1dbd-4601-9587-3e6e2c1ff307",
+      "movie": {
+        "id": "3fe2f53d-6387-4857-9c39-7c075ca0cb47",
+        "title": "花木蘭",
+        "year": 1998
+      },
+      "imdb_id": "tt0120762",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1999,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "7b73a7b8-ddff-4bab-a147-ac1e17391d67",
+      "movie": {
+        "id": "6d7fed60-899e-4357-ba45-864b7c6e89a3",
+        "title": "殺無赦",
+        "year": 1992
+      },
+      "imdb_id": "tt0105695",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1993,
+          "award_category": "最佳原著劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1993,
+          "award_category": "最佳影片",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1993,
+          "award_category": "最佳導演",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1993,
+          "award_category": "最佳男主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1993,
+          "award_category": "最佳男配角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1993,
+          "award_category": "最佳音效混音",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1993,
+          "award_category": "最佳攝影",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1993,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1993,
+          "award_category": "最佳剪輯",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "84ae4241-0aa5-4fa4-ba73-69c2e221fb4e",
+      "movie": {
+        "id": "2032b183-5610-4c84-8f72-e7830fbb3512",
+        "title": "噩夢輓歌",
+        "year": 2000
+      },
+      "imdb_id": "tt0180093",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2001,
+          "award_category": "最佳女主角",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "86ffa14b-bc71-40ca-827f-71d00850bf48",
+      "movie": {
+        "id": "2a6149fa-e372-4372-8608-b4a885c227ca",
+        "title": "猜火車",
+        "year": 1996
+      },
+      "imdb_id": "tt0117951",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1997,
+          "award_category": "最佳改編劇本",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "87d21c74-74ce-4871-9b4c-e228ddd908fb",
+      "movie": {
+        "id": "43dec8d2-cce9-4d92-a62b-88ab0707629b",
+        "title": "魔戒三部曲：王者再臨",
+        "year": 2003
+      },
+      "imdb_id": "tt0167260",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳影片",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳導演",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳改編劇本",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳原創歌曲",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳服裝設計",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳美術設計",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳剪輯",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳視覺效果",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳音效混音",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳化妝與髮型設計",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳原著配樂",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "8be7720f-a274-41f9-a39e-8df456f6aad9",
+      "movie": {
+        "id": "f6a4df5f-f0cd-4830-a1a9-8ea2cd7af393",
+        "title": "戰地琴人",
+        "year": 2002
+      },
+      "imdb_id": "tt0253474",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳導演",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳男主角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳改編劇本",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳攝影",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳服裝設計",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "8ce95967-0791-43ef-aef0-37440f617395",
+      "movie": {
+        "id": "2364f43e-6a1d-4d59-aad4-fb7f8b1c0d99",
+        "title": "梅爾吉勃遜之英雄本色",
+        "year": 1995
+      },
+      "imdb_id": "tt0112573",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳原著劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳影片",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳導演",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳攝影",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳服裝設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳音效混音",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳化妝與髮型設計",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "8f057550-171b-40be-8e8a-62b20ddd935c",
+      "movie": {
+        "id": "a528042d-2bdb-4d13-9f6d-6aa00437a349",
+        "title": "冰血暴",
+        "year": 1996
+      },
+      "imdb_id": "tt0116282",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1997,
+          "award_category": "最佳原著劇本",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1997,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1997,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1997,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1997,
+          "award_category": "最佳女主角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1997,
+          "award_category": "最佳男配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1997,
+          "award_category": "最佳攝影",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "8f1eec56-1b1f-4cd4-bc9f-2c1aab3fe2ce",
+      "movie": {
+        "id": "aba2f725-02d6-49e0-a736-24c04d1518c8",
+        "title": "漫漫回家路",
+        "year": 2016
+      },
+      "imdb_id": "tt3741834",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2017,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2017,
+          "award_category": "最佳男配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2017,
+          "award_category": "最佳女配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2017,
+          "award_category": "最佳改編劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2017,
+          "award_category": "最佳攝影",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2017,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "989ec928-83ee-463e-bf97-f7097050d7f9",
+      "movie": {
+        "id": "cd591beb-6a0c-4a09-acf7-369adb1df1bb",
+        "title": "玩具總動員3",
+        "year": 2010
+      },
+      "imdb_id": "tt0435761",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2011,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2011,
+          "award_category": "最佳改編劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2011,
+          "award_category": "最佳動畫",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "9998249f-5e4e-448e-a530-1cceed23f456",
+      "movie": {
+        "id": "2b8714fd-0d1c-41fe-b0a2-3de70287feed",
+        "title": "魔戒首部曲：魔戒現身",
+        "year": 2001
+      },
+      "imdb_id": "tt0120737",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳男配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳改編劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳原創歌曲",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳攝影",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳服裝設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳視覺效果",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳化妝與髮型設計",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳原著配樂",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳音效混音",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "a758735b-044c-40ef-8774-a47b5441d59e",
+      "movie": {
+        "id": "b02b1e25-9b34-4d8a-ac06-b2274edc426a",
+        "title": "四海好傢伙",
+        "year": 1990
+      },
+      "imdb_id": "tt0099685",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳男配角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳女配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳改編劇本",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "a9b61f36-b8d9-41a7-900d-99de03a33761",
+      "movie": {
+        "id": "b370279b-d9e9-40d9-93b1-60598a262447",
+        "title": "火線追緝令",
+        "year": 1995
+      },
+      "imdb_id": "tt0114369",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1996,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "ac3a0ce4-6210-41d3-9cd4-de0706b6450d",
+      "movie": {
+        "id": "a0461f70-7beb-4705-9188-1860ccb120d4",
+        "title": "阿甘正傳",
+        "year": 1994
+      },
+      "imdb_id": "tt0109830",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳影片",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳導演",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳男主角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳男配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳改編劇本",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳攝影",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳剪輯",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳音效混音",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳視覺效果",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳化妝與髮型設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "b3a17ebb-8c1c-4fa8-9be3-9487811e3121",
+      "movie": {
+        "id": "90058c4c-0184-441d-9b02-d0c874b22201",
+        "title": "穆荷蘭大道",
+        "year": 2001
+      },
+      "imdb_id": "tt0166924",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳導演",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "b6ce45dc-e9ac-4e65-bbb9-d14648226f5c",
+      "movie": {
+        "id": "59460904-58d3-48cb-9db7-995e689677a9",
+        "title": "神鬼交鋒",
+        "year": 2002
+      },
+      "imdb_id": "tt0264464",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2003,
+          "award_category": "最佳男配角",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "bb843329-240b-4842-9036-7f2de8b48158",
+      "movie": {
+        "id": "b410b3cf-3e7a-443e-b5f9-aa1a72574dd8",
+        "title": "尋龍使者：拉雅",
+        "year": 2021
+      },
+      "imdb_id": "tt5109280",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2021,
+          "award_category": "最佳動畫",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "c1c880fd-cf07-4dad-813a-d6058ea540e7",
+      "movie": {
+        "id": "b95cf93a-e88d-4892-a731-7ee81ebe578c",
+        "title": "美麗境界",
+        "year": 2001
+      },
+      "imdb_id": "tt0268978",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳影片",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳導演",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳男主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳化妝與髮型設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳女配角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2002,
+          "award_category": "最佳改編劇本",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "c465a96b-f78d-4a2d-923c-2005c65bb206",
+      "movie": {
+        "id": "e29877ff-5298-4a6c-8e7d-7389711c724a",
+        "title": "超級狐狸先生",
+        "year": 2009
+      },
+      "imdb_id": "tt0432283",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2010,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2010,
+          "award_category": "最佳動畫",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "c708c0f4-99cd-4799-a677-2bfbaac5e292",
+      "movie": {
+        "id": "964d316f-e2c2-44fa-bd5f-d5c5dcf75eaf",
+        "title": "美國心玫瑰情",
+        "year": 1999
+      },
+      "imdb_id": "tt0169547",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳原著劇本",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳影片",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳導演",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳女主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳男主角",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳攝影",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2000,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "cc66b2b1-8790-4620-ba48-e37c962c3d77",
+      "movie": {
+        "id": "e645187c-b76d-4dd8-a710-4fefc28fd6fe",
+        "title": "與狼共舞",
+        "year": 1990
+      },
+      "imdb_id": "tt0099348",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳影片",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳導演",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳男主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳男配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳女配角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳改編劇本",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳攝影",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳服裝設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳美術設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳原著配樂",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳音效混音",
+          "result": "won"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1991,
+          "award_category": "最佳剪輯",
+          "result": "won"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "cde0b2ef-4d19-4d66-9c22-22d8dbcb1a14",
+      "movie": {
+        "id": "7b10bb20-db83-4622-9e12-8d8a8456f078",
+        "title": "聖誕夜驚魂",
+        "year": 1993
+      },
+      "imdb_id": "tt0107688",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1994,
+          "award_category": "最佳視覺效果",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "d57e0754-3c6a-4930-a06d-d169ca63de34",
+      "movie": {
+        "id": "a7ba81b6-cf55-4071-aa98-dd4809205ed2",
+        "title": "神鬼奇航：鬼盜船魔咒",
+        "year": 2003
+      },
+      "imdb_id": "tt0325980",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳男主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳視覺效果",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳化妝與髮型設計",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 2004,
+          "award_category": "最佳音效混音",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "db3031f6-ce44-4726-8649-a66ff1db2fa3",
+      "movie": {
+        "id": "5ac7de97-acb8-43dd-88c2-3be89ffb315b",
+        "title": "刺激1995",
+        "year": 1994
+      },
+      "imdb_id": "tt0111161",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳影片",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳男主角",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳改編劇本",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳攝影",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳剪輯",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳原著配樂",
+          "result": "nominated"
+        },
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳音效混音",
+          "result": "nominated"
+        }
+      ]
+    },
+    {
+      "placeholder_id": "e47a6997-b09d-4130-bf29-87dd3125b7df",
+      "movie": {
+        "id": "62a20107-8e90-4f20-9766-65006e24ec2b",
+        "title": "獅子王",
+        "year": 1994
+      },
+      "imdb_id": "tt0110357",
+      "new_rows": [
+        {
+          "festival": "奧斯卡",
+          "year": 1995,
+          "award_category": "最佳原著配樂",
+          "result": "won"
+        }
+      ]
+    }
+  ],
+  "todo": []
+}
