@@ -1,0 +1,57 @@
+# Midnight Moodvie — Caddy reverse proxy
+#
+# 安裝位置：droplet 上的 /etc/caddy/Caddyfile（apt package "caddy"）
+# Reload：sudo systemctl reload caddy
+# Validate：sudo caddy validate --config /etc/caddy/Caddyfile
+# Log：journalctl -u caddy -f  或  /var/log/caddy/mmoodvie.log
+
+{
+    email kokorohook0628@gmail.com
+}
+
+# www → apex 301
+www.mmoodvie.live {
+    redir https://mmoodvie.live{uri} permanent
+}
+
+mmoodvie.live {
+    encode gzip zstd
+
+    request_body {
+        max_size 50MB
+    }
+
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "SAMEORIGIN"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        -Server
+    }
+
+    # Directus 反代（用 handle 強制互斥路由，避免 try_files 先改寫請求）
+    # 規則與 docs/DEPLOY.md nginx regex 對齊；websocket / HTTP upgrade 由 reverse_proxy 自動處理
+    @directus path_regexp ^/(admin|assets|server|auth|users|items|files|graphql|websocket|shares|extensions|flows|operations|presets|relations|schema|settings|utils|activity|collections|fields|folders|notifications|panels|permissions|policies|revisions|roles|translations|versions|dashboards)(/|$)
+    handle @directus {
+        reverse_proxy 127.0.0.1:8055
+    }
+
+    # 前端 SPA static + fallback（Directus 路徑以外都走這裡）
+    handle {
+        root * /var/www/midnight-fe/current
+
+        @static path_regexp \.(js|css|woff2?|ttf|otf|eot|png|jpg|jpeg|gif|webp|svg|ico|mp4|webm)$
+        header @static Cache-Control "public, max-age=2592000, immutable"
+
+        try_files {path} /index.html
+        file_server
+    }
+
+    log {
+        output file /var/log/caddy/mmoodvie.log {
+            roll_size 10mb
+            roll_keep 7
+        }
+        format console
+    }
+}

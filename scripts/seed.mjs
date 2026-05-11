@@ -12,7 +12,7 @@ const env = Object.fromEntries(
     .map(l => { const i = l.indexOf('='); return [l.slice(0, i).trim(), l.slice(i + 1).trim()] })
 )
 
-const BASE = 'http://localhost:8055'
+const BASE = process.env.DIRECTUS_URL || 'http://localhost:8055'
 const POSTERS_DIR = join(__dirname, '../../midnight-fe/public/img')
 
 async function login() {
@@ -110,7 +110,6 @@ async function uploadPoster(token, imgFile) {
   const imgPath = join(POSTERS_DIR, imgFile)
   if (!existsSync(imgPath)) return null
 
-  const { FormData, Blob } = await import('node:buffer').catch(() => null) || {}
   const bytes = readFileSync(imgPath)
   const form = new FormData()
   form.append('file', new Blob([bytes], { type: 'image/jpeg' }), imgFile)

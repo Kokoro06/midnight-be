@@ -1,0 +1,64 @@
+name: BE Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docker-compose.prod.yml'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+concurrency:
+  group: be-deploy
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint compose
+        run: docker compose -f docker-compose.prod.yml config -q
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-24.04
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
+
+      - name: known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p ${{ secrets.DEPLOY_SSH_PORT }} -H ${{ secrets.DEPLOY_SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Rsync compose to VPS
+        run: |
+          rsync -az \
+            --include='docker-compose.prod.yml' \
+            --include='.env.example' \
+            --exclude='*' \
+            -e "ssh -p ${{ secrets.DEPLOY_SSH_PORT }}" \
+            ./ ${{ secrets.DEPLOY_SSH_USER }}@${{ secrets.DEPLOY_SSH_HOST }}:/opt/midnight-be/
+
+      - name: Pull & up
+        run: |
+          ssh -p ${{ secrets.DEPLOY_SSH_PORT }} ${{ secrets.DEPLOY_SSH_USER }}@${{ secrets.DEPLOY_SSH_HOST }} bash <<'EOF'
+            set -euo pipefail
+            cd /opt/midnight-be
+            docker compose -f docker-compose.prod.yml pull
+            docker compose -f docker-compose.prod.yml up -d --remove-orphans
+            for i in {1..30}; do
+              status=$(docker inspect --format '{{.State.Health.Status}}' midnight_directus 2>/dev/null || echo "starting")
+              [ "$status" = "healthy" ] && break
+              sleep 5
+            done
+            [ "$status" = "healthy" ] || { echo "Directus not healthy"; exit 1; }
+            docker image prune -f
+          EOF

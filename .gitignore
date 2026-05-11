@@ -1,5 +1,6 @@
 .env
-.env.example
+.env.local
+.env.production
 database/
 uploads/
 node_modules/
