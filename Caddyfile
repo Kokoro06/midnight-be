@@ -29,6 +29,11 @@ mmoodvie.live {
         -Server
     }
 
+    # Mood mapper 反代（Claude API 心情→tag 映射服務）
+    handle /api/mood {
+        reverse_proxy 127.0.0.1:3001
+    }
+
     # Directus 反代（用 handle 強制互斥路由，避免 try_files 先改寫請求）
     # 規則與 docs/DEPLOY.md nginx regex 對齊；websocket / HTTP upgrade 由 reverse_proxy 自動處理
     @directus path_regexp ^/(admin|assets|server|auth|users|items|files|graphql|websocket|shares|extensions|flows|operations|presets|relations|schema|settings|utils|activity|collections|fields|folders|notifications|panels|permissions|policies|revisions|roles|translations|versions|dashboards)(/|$)

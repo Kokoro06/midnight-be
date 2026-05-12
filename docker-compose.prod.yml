@@ -73,6 +73,32 @@ services:
         max-size: "10m"
         max-file: "3"
 
+  mood-mapper:
+    image: node:20-alpine
+    container_name: midnight_mood_mapper
+    restart: unless-stopped
+    networks:
+      - midnight_internal
+    ports:
+      - "127.0.0.1:3001:3001"
+    volumes:
+      - ./functions:/app:ro
+    working_dir: /app
+    command: ["node", "mood-mapper.js"]
+    environment:
+      MOOD_MAPPER_PORT: "3001"
+      DIRECTUS_BASE: "http://directus:8055"
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      CORS_ORIGIN: ${CORS_ORIGIN}
+    depends_on:
+      directus:
+        condition: service_healthy
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
 networks:
   midnight_internal:
     driver: bridge

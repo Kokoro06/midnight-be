@@ -6,15 +6,23 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const env = Object.fromEntries(
-  readFileSync(join(__dirname, '..', '.env'), 'utf-8')
-    .split('\n')
-    .filter(l => l.trim() && l.includes('='))
-    .map(l => { const i = l.indexOf('='); return [l.slice(0, i).trim(), l.slice(i + 1).trim()] })
-)
+
+function loadDotEnv() {
+  try {
+    return Object.fromEntries(
+      readFileSync(join(__dirname, '..', '.env'), 'utf-8')
+        .split('\n')
+        .filter(l => l.trim() && !l.startsWith('#') && l.includes('='))
+        .map(l => { const i = l.indexOf('='); return [l.slice(0, i).trim(), l.slice(i + 1).trim()] })
+    )
+  } catch {
+    return {}
+  }
+}
+const env = { ...loadDotEnv(), ...process.env }
 
 const PORT = env.MOOD_MAPPER_PORT || 3001
-const DIRECTUS_BASE = 'http://localhost:8055'
+const DIRECTUS_BASE = env.DIRECTUS_BASE || 'http://localhost:8055'
 const ANTHROPIC_KEY = env.ANTHROPIC_API_KEY
 
 if (!ANTHROPIC_KEY) {
