@@ -81,6 +81,22 @@ async function directus(token, method, path, body) {
   return res.json()
 }
 
+// 把 TMDB CDN URL 透過 Directus /files/import 下載成 Directus asset，回傳 file UUID；失敗回 null。
+// 走 server-side download 避免本機 stream，也避開前端的 TMDB CORS 問題。
+async function importPoster(token, url, title) {
+  const res = await fetch(`${BASE}/files/import`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ url, data: { title } }),
+  })
+  const body = await res.json()
+  if (body.errors || !body.data?.id) {
+    console.warn(`  ⚠ poster import 失敗 (${title}): ${body.errors?.[0]?.message ?? res.status}`)
+    return null
+  }
+  return body.data.id
+}
+
 // ── TMDB helpers ──────────────────────────────────────────
 
 async function tmdb(path) {
@@ -178,13 +194,15 @@ async function main() {
 
   // 取得現有 movies — 雙鍵 dedupe：original_title 與 title+year（容忍 ±1 年）
   console.log('🎬 取得現有 movies...')
-  const { data: existingMovies } = await directus(token ?? '', 'GET', '/items/movies?limit=-1&fields=id,title,original_title,year')
+  const { data: existingMovies } = await directus(token ?? '', 'GET', '/items/movies?limit=-1&fields=id,title,original_title,year,poster,poster_url')
     .catch(() => ({ data: [] }))
   const existingByOrigTitle = {}
   const existingByZhYear = {}  // `${zhTitle}|${year}` → id
+  const existingPosterById = {}  // id → { poster, poster_url }
   for (const m of existingMovies ?? []) {
     if (m.original_title) existingByOrigTitle[m.original_title.toLowerCase()] = m.id
     if (m.title && m.year) existingByZhYear[`${m.title}|${m.year}`] = m.id
+    existingPosterById[m.id] = { poster: m.poster ?? null, poster_url: m.poster_url ?? null }
   }
   console.log(`  ✓ ${(existingMovies ?? []).length} 部現有電影（${Object.keys(existingByOrigTitle).length} 有 original_title、${Object.keys(existingByZhYear).length} 有 title+year）\n`)
 
@@ -284,7 +302,7 @@ async function main() {
       }
     }
 
-    const posterUrl = movie.poster_path
+    const tmdbPosterUrl = movie.poster_path
       ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
       : null
 
@@ -292,8 +310,29 @@ async function main() {
       title: zhTitle,
       original_title: origTitle,
       year,
-      poster_url: posterUrl,
       tags: tagEntries,
+    }
+
+    // 海報處理：
+    //   - 已遷移過（existing.poster 是 UUID）：不重抓
+    //   - 新電影 / 還沒遷移的：下載進 Directus assets，清掉 poster_url
+    //   - import 失敗：退回存 poster_url 當 fallback（之後 migrate-posters-to-directus.mjs 會補）
+    //   - DRY_RUN：不打 /files/import，存 URL 即可
+    if (tmdbPosterUrl) {
+      const existingPoster = existingId ? existingPosterById[existingId]?.poster : null
+      if (existingPoster) {
+        // 已遷移過，payload 不動 poster 欄位
+      } else if (DRY_RUN) {
+        payload.poster_url = tmdbPosterUrl
+      } else {
+        const fileId = await importPoster(token, tmdbPosterUrl, `${zhTitle} poster`)
+        if (fileId) {
+          payload.poster = fileId
+          payload.poster_url = null
+        } else {
+          payload.poster_url = tmdbPosterUrl
+        }
+      }
     }
 
     if (existingId) {

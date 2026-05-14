@@ -123,6 +123,21 @@ async function directus(token, method, path, body) {
   return res.json()
 }
 
+// 把 TMDB CDN URL 透過 Directus /files/import 下載成 Directus asset，回傳 file UUID；失敗回 null。
+async function importPoster(token, url, title) {
+  const res = await fetch(`${BASE}/files/import`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ url, data: { title } }),
+  })
+  const body = await res.json()
+  if (body.errors || !body.data?.id) {
+    console.warn(`  ⚠ poster import 失敗 (${title}): ${body.errors?.[0]?.message ?? res.status}`)
+    return null
+  }
+  return body.data.id
+}
+
 // ── TMDB helpers ──────────────────────────────────────────
 
 async function tmdb(path) {
@@ -281,12 +296,14 @@ async function main() {
   console.log('🎬 取得現有 movies...')
   const { data: existingMovies } = DRY_RUN
     ? { data: [] }
-    : await directus(token, 'GET', '/items/movies?limit=-1&fields=id,title,original_title,year').catch(() => ({ data: [] }))
+    : await directus(token, 'GET', '/items/movies?limit=-1&fields=id,title,original_title,year,poster,poster_url').catch(() => ({ data: [] }))
   const existingByOrigTitle = {}
   const existingByZhYear = {}
+  const existingPosterById = {}  // id → { poster, poster_url }
   for (const m of existingMovies ?? []) {
     if (m.original_title) existingByOrigTitle[m.original_title.toLowerCase()] = m.id
     if (m.title && m.year) existingByZhYear[`${m.title}|${m.year}`] = m.id
+    existingPosterById[m.id] = { poster: m.poster ?? null, poster_url: m.poster_url ?? null }
   }
   if (!DRY_RUN) console.log(`  ✓ ${(existingMovies ?? []).length} 部現有電影\n`)
 
@@ -397,7 +414,7 @@ async function main() {
       if (existingId) console.log(`  ⤷ 中譯片名比對到已存在《${zhTitle}》(${year})，改為更新`)
     }
 
-    const posterUrl = movie.poster_path
+    const tmdbPosterUrl = movie.poster_path
       ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
       : null
 
@@ -405,8 +422,25 @@ async function main() {
       title: zhTitle,
       original_title: origTitle,
       year,
-      poster_url: posterUrl,
       tags: tagEntries,
+    }
+
+    // 海報處理（同 import-tmdb.mjs）：已遷移過不重抓；新電影下載進 Directus；失敗退回 poster_url。
+    if (tmdbPosterUrl) {
+      const existingPoster = existingId ? existingPosterById[existingId]?.poster : null
+      if (existingPoster) {
+        // 已遷移過，不動
+      } else if (DRY_RUN) {
+        payload.poster_url = tmdbPosterUrl
+      } else {
+        const fileId = await importPoster(token, tmdbPosterUrl, `${zhTitle} poster`)
+        if (fileId) {
+          payload.poster = fileId
+          payload.poster_url = null
+        } else {
+          payload.poster_url = tmdbPosterUrl
+        }
+      }
     }
 
     if (existingId) {
