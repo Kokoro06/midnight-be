@@ -204,6 +204,7 @@ async function main() {
     collection: 'festival_awards',
     field: 'movie',
     related_collection: 'movies',
+    schema: { on_delete: 'CASCADE' },  // 刪 movie 連帶刪 awards（awards 只在 movie 上下文有意義）
   })
   if (relationRes.errors) {
     const msg = JSON.stringify(relationRes.errors)
